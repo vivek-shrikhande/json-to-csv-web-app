@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header" id="heading-main">JSON to CSV converter</div>
+
+  <div class="content">
+    <div class="editor">
+      <div class="editor-button-panel">
+        <button id="button-convert" class="editor-button-panel-button" title="Ctrl + Enter / Cmd + Enter"
+          onclick="editor.performAction()">Convert</button>
+        <button id="button-indent" class="editor-button-panel-button" title="Ctrl + I / Cmd + I"
+          onclick="editor.indent()">Toggle Indentation</button>
+      </div>
+      <div id="editor-main-json">{
+        "a": 2,
+        "b": [1,2,3]
+        }
+      </div>
+    </div>
+    <div class="editor">
+      <div class="editor-button-panel">
+        <button id="editor-button-panel-button-download" class="editor-button-panel-button" onclick="editor.download()"
+          disabled>Download</button>
+      </div>
+      <div id="editor-main-csv">
+        <!-- <div id="editor-main-csv-line-no-panel">
+        </div> -->
+        <div id="editor-main-csv-table" style="overflow: auto; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="const.js" type="text/javascript" charset="utf-8"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
