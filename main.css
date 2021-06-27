@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.header {
+  /* flex-grow: 0; */
+  /* height: 10%; */
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+#heading-main {
+  font-family: 'Montserrat';
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: flex;
+  /* height: 92%; */
+  flex: 1;
+  width: 100%;
+  padding: 5px;
+  min-height: 0px;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  margin: 5px;
+  min-width: 0px;
+}
+
+.editor-button-panel {
+  display: flex;
+  flex: 0 0 24px;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 24px;
+  /* width: 100%; */
+  border: 1px solid #d1d5da;
+  border-bottom: none;
+  background-color: #f6f8fa;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-right: 8px;
+}
+
+#editor-main-json,
+#editor-main-csv {
+  /* width: 100%; */
+  flex: 1 1 auto;
+  line-height: 1.5;
+  border: 1px solid #d1d5da;
+  border-top: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#editor-main-csv {
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  /* border: 1px solid #d1d5da; */
+  width: 100%;
+
+  font-size: 12px;
+  font-family: monospace;
+}
+
+tr {
+  /* border: 1px solid #d1d5da; */
+  height: 17px;
+}
+
+th,
+td {
+  /* border-left: 1px solid #d1d5da;
+  border-right: 1px solid #d1d5da; */
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+th {
+  text-align: left;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  border-left: none;
+  text-align: right;
+  width: 40px;
+}
+
+td:nth-last-child(1),
+th:nth-last-child(1) {
+  border-right: none;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f6f8fa;
+} */
+#editor-main-csv-line-no-panel {
+  min-width: 40px;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  font-family: monospace;
+  line-height: 18px;
+  text-align: right;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  
+}
+
+#editor-main-csv-line-no-panel::-webkit-scrollbar {
+  display: none;
+}
+
+.editor-button-panel-button {
+  background: none;
+  border: none;
+}
+.editor-button-panel-button:hover {
+  background-color: rgb(201, 201, 201);
+  border: none;
+}
+.editor-button-panel-button:focus {
+  outline: none;
+}
+
+#status-box {
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
