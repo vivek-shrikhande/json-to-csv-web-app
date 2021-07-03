@@ -10,15 +10,25 @@
 </head>
 
 <body>
-  <div class="header" id="heading-main">JSON to CSV converter</div>
+  <div class="header">
+    <div id="heading-main">JSON to CSV converter</div>
+    <div class="social-link-container">
+      <a href="https://github.com/vivek-shrikhande/json-to-csv-web-app" target="_blank" rel="noopener noreferrer">
+        <img class="social-link-logo" src="assets/github-logo-64px.png" alt="Github">
+      </a>
+      <a href="https://twitter.com/VivekShrikhand1" target="_blank" rel="noopener noreferrer">
+        <img class="social-link-logo" src="assets/twitter-logo.svg" alt="Twitter">
+      </a>
+    </div>
+  </div>
 
   <div class="content">
     <div class="editor">
       <div class="editor-button-panel">
-        <button id="button-convert" class="editor-button-panel-button" title="Ctrl + Enter / Cmd + Enter"
-          onclick="editor.performAction()">Convert</button>
         <button id="button-indent" class="editor-button-panel-button" title="Ctrl + I / Cmd + I"
           onclick="editor.indent()">Toggle Indentation</button>
+        <button id="button-convert" class="editor-button-panel-button" title="Ctrl + Enter / Cmd + Enter"
+          onclick="editor.performAction()">Convert</button>
       </div>
       <div id="editor-main-json">{
         "a": 2,
@@ -32,9 +42,7 @@
           disabled>Download</button>
       </div>
       <div id="editor-main-csv">
-        <!-- <div id="editor-main-csv-line-no-panel">
-        </div> -->
-        <div id="editor-main-csv-table" style="overflow: auto; height: 100%;">
+        <div id="editor-main-csv-table">
         </div>
       </div>
     </div>
