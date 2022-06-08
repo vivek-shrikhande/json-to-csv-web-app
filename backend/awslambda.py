@@ -33,7 +33,7 @@ def convert(event, context):
     if method != 'POST':
         raise ValueError(f"Method '{method}' not allowed!")
 
-    if path != '/convert':
+    if path != '/json-to-csv/convert':
         raise ValueError(f"Path '{path}' not found!")
 
     body = json.loads(event['body'])
