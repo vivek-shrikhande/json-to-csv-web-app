@@ -1,3 +1,7 @@
+# aws lambda dependency dir and zip file
+backend/package/*
+backend/aws-lambda-deployment-package.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
