@@ -38,14 +38,36 @@
         <button id="button-convert" class="editor-button-panel-button" title="Ctrl + Enter / Cmd + Enter"
           onclick="editor.performAction()">Convert</button>
       </div>
-      <div id="editor-main-json">{
-    "a": 2,
-    "b": [
-        1,
-        2,
-        3
-    ]
-}</div>
+      <div id="editor-main-json">[
+    {
+        "no": 123,
+        "name": "Foo",
+        "subjects": [
+            {
+                "name": "mathematics",
+                "score": 93
+            },
+            {
+                "name": "physics",
+                "score": 80
+            }
+        ]
+    },
+    {
+        "no": 345,
+        "name": "Buzz",
+        "subjects": [
+            {
+                "name": "mathematics",
+                "score": 90
+            },
+            {
+                "name": "physics",
+                "score": 95
+            }
+        ]
+    }
+]</div>
     </div>
     <div class="editor">
       <div class="editor-button-panel">
